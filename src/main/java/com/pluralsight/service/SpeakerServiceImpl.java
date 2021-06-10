@@ -12,24 +12,8 @@ import java.util.List;
 @Service("speakerService")
 public class SpeakerServiceImpl implements SpeakerService {
 
-  private SpeakerRepository repository;
+  private SpeakerRepository repository = new HibernateSpeakerRepositoryImpl();
 
-  public SpeakerServiceImpl() {
-    System.out.println("SpeakerServiceImpl no args constructor");
-  }
-
-  public SpeakerServiceImpl(SpeakerRepository speakerRepository) {
-    System.out.println("SpeakerServiceImpl w/ args constructor");
-    repository = speakerRepository;
-  }
-
-  @Autowired
-  public void setRepository(SpeakerRepository repository) {
-    System.out.println("SpeakerServiceImpl setter");
-    this.repository = repository;
-  }
-
-  @Override
   public List<Speaker> findAll() {
     return repository.findAll();
   }
