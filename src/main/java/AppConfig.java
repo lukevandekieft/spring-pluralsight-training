@@ -13,6 +13,10 @@ import org.springframework.context.annotation.Scope;
 @ComponentScan({"com.pluralsight"})
 public class AppConfig {
 
+  @Bean(name = "cal")
+  public CalendarFactory calFactory() {
+    CalendarFactory factory = new CalendarFactory();
+  }
 //  @Bean(name = "speakerService")
 //  @Scope(value= BeanDefinition.SCOPE_SINGLETON)
 //  public SpeakerService getSpeakerService() {
