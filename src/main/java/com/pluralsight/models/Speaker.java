@@ -1,4 +1,4 @@
-package com.pluralsight.model;
+package com.pluralsight.models;
 
 public class Speaker {
   private String firstName;

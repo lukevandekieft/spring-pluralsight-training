@@ -1,6 +1,6 @@
-package com.pluralsight.repository;
+package com.pluralsight.repositories;
 
-import com.pluralsight.model.Speaker;
+import com.pluralsight.models.Speaker;
 
 import java.util.List;
 

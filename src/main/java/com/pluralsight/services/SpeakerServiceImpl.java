@@ -1,10 +1,9 @@
-package com.pluralsight.service;
+package com.pluralsight.services;
 
-import com.pluralsight.model.Speaker;
-import com.pluralsight.repository.SpeakerRepository;
+import com.pluralsight.models.Speaker;
+import com.pluralsight.repositories.SpeakerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
