@@ -9,7 +9,7 @@ import java.applet.AppletContext;
 
 public class Application {
   public static void main(String args[]) {
-    ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+    ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext(AppConfig.class);
     SpeakerService service = appContext.getBean("speakerService", SpeakerService.class);
 
     System.out.println(service.findAll().get(0).getFirstName());
