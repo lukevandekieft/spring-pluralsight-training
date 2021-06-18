@@ -4,6 +4,7 @@ import com.pluralsight.model.Speaker;
 import com.pluralsight.repository.SpeakerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 @Service("speakerService")
+//@Profile("prod") <-- if ``Configution -> VM Options`` is set to "prod" then this runs, otherwise the service is skipped
 public class SpeakerServiceImpl implements SpeakerService {
 
   private SpeakerRepository repository;
