@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="speakerRepository"
-          class="com.pluralsight.repository.HibernateSpeakerRepositoryImpl" />
+          class="com.pluralsight.repositories.HibernateSpeakerRepositoryImpl" />
 
     <bean name="speakerService"
-          class="com.pluralsight.service.SpeakerServiceImpl" autowire="byType">
+          class="com.pluralsight.services.SpeakerServiceImpl" autowire="byType">
             <!--autowire='constructor' also works-->
     </bean>
 </beans>
