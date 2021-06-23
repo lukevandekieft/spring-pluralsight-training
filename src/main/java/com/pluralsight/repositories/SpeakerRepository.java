@@ -1,9 +1,7 @@
 package com.pluralsight.repositories;
 
-import com.pluralsight.models.Speaker3;
+import com.pluralsight.models.Speaker;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
-
-public interface SpeakerRepository {
-  List<Speaker3> findAll();
+public interface SpeakerRepository extends JpaRepository<Speaker, Long> {
 }

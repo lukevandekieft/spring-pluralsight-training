@@ -1,7 +1,7 @@
 package com.pluralsight.services;
 
 import com.pluralsight.models.Speaker3;
-import com.pluralsight.repositories.SpeakerRepository;
+import com.pluralsight.repositories.Speaker3Repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,15 +14,15 @@ import javax.annotation.PostConstruct;
 //@Profile("prod") <-- if ``Configution -> VM Options`` is set to "prod" then this runs, otherwise the service is skipped
 public class SpeakerServiceImpl implements SpeakerService {
 
-  private SpeakerRepository repository;
+  private Speaker3Repository repository;
 
   public SpeakerServiceImpl() {
     System.out.println("SpeakerServiceImpl no args constructor");
   }
 
-  public SpeakerServiceImpl(SpeakerRepository speakerRepository) {
+  public SpeakerServiceImpl(Speaker3Repository speaker3Repository) {
     System.out.println("SpeakerServiceImpl w/ args constructor");
-    repository = speakerRepository;
+    repository = speaker3Repository;
   }
 
   @PostConstruct
@@ -31,7 +31,7 @@ public class SpeakerServiceImpl implements SpeakerService {
   }
 
   @Autowired
-  public void setRepository(SpeakerRepository repository) {
+  public void setRepository(Speaker3Repository repository) {
     System.out.println("SpeakerServiceImpl setter");
     this.repository = repository;
   }
