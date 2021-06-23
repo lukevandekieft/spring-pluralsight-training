@@ -1,6 +1,6 @@
 package com.pluralsight.services;
 
-import com.pluralsight.models.Speaker;
+import com.pluralsight.models.Speaker3;
 import com.pluralsight.repositories.SpeakerRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class SpeakerServiceImpl implements SpeakerService {
   }
 
   @Override
-  public List<Speaker> findAll() {
+  public List<Speaker3> findAll() {
     return repository.findAll();
   }
 }

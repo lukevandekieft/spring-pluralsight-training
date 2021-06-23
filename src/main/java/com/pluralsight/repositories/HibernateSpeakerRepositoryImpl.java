@@ -1,6 +1,6 @@
 package com.pluralsight.repositories;
 
-import com.pluralsight.models.Speaker;
+import com.pluralsight.models.Speaker3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,10 +19,10 @@ public class HibernateSpeakerRepositoryImpl implements SpeakerRepository {
   @Value("#{ T(java.lang.Math).random() * 100 }")
   private double seedNum;
 
-  public List<Speaker> findAll() {
-    List<Speaker> speakers = new ArrayList<Speaker>();
+  public List<Speaker3> findAll() {
+    List<Speaker3> speakers = new ArrayList<Speaker3>();
 
-    Speaker speaker = new Speaker();
+    Speaker3 speaker = new Speaker3();
     speaker.setFirstName("Luke");
     speaker.setLastName("Vandekieft");
     speaker.setSeedNum(seedNum);
