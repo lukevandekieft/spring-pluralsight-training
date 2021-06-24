@@ -1,5 +1,7 @@
 package com.pluralsight.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import org.hibernate.annotations.Type;
 
 import java.util.List;
@@ -43,6 +45,7 @@ public class Speaker {
   }
 
   @ManyToMany(mappedBy = "speakers")
+  @JsonIgnore
   private List<Session> sessions;
 
   public Speaker() {
