@@ -1,2 +1,3 @@
+# We CAN use both YML and property files but it's generally best practice to use one or the other... says the teacher anyhow. SIC does this
 server:
-  port: 5011
+  port: 8080
