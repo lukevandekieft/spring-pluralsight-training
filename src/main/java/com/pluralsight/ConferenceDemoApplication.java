@@ -12,6 +12,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 @SpringBootApplication
 public class ConferenceDemoApplication {
   public static void main(String args[]) {
+    // "args" is how in-line arguments get passed in
     SpringApplication.run(ConferenceDemoApplication.class, args);
   }
 }
