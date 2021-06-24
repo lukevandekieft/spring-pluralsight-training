@@ -1,8 +1,13 @@
-/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/HibernateSpeakerRepositoryImpl.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/SessionRepository.java
 /Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/AppConfig.java
 /Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/Application.java
-/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/SpeakerRepository.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/Speaker3Repository.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/HibernateSpeaker3RepositoryImpl.java
 /Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/services/SpeakerServiceImpl.java
 /Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/models/Speaker.java
-/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/util/CalendarFactory.java
 /Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/services/SpeakerService.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/controllers/SessionsController.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/repositories/SpeakerRepository.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/models/Speaker3.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/models/Session.java
+/Users/s007643/Desktop/PJ-other/spring-pluralsight-training/src/main/java/com/pluralsight/util/CalendarFactory.java
