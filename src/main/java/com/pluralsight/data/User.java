@@ -1,10 +1,13 @@
 package com.pluralsight.data;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class User {
+  @Value("#{'John Doe'}")
   private String name;
+  @Value("#{30}")
   private int age;
   private String country;
   private String language;
